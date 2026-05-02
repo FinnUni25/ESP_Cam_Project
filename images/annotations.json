@@ -1,1 +1,147 @@
-{"images": [{"image_name": "1.jpg", "image_id": 0, "width": 320, "height": 240}, {"image_name": "17.jpg", "image_id": 1, "width": 320, "height": 240}, {"image_name": "11.jpg", "image_id": 2, "width": 320, "height": 240}, {"image_name": "3.jpg", "image_id": 3, "width": 320, "height": 240}, {"image_name": "13.jpg", "image_id": 4, "width": 320, "height": 240}, {"image_name": "4.jpg", "image_id": 5, "width": 320, "height": 240}, {"image_name": "5.jpg", "image_id": 6, "width": 320, "height": 240}, {"image_name": "20.jpg", "image_id": 7, "width": 320, "height": 240}, {"image_name": "14.jpg", "image_id": 8, "width": 320, "height": 240}, {"image_name": "7.jpg", "image_id": 9, "width": 320, "height": 240}, {"image_name": "12.jpg", "image_id": 10, "width": 320, "height": 240}, {"image_name": "19.jpg", "image_id": 11, "width": 320, "height": 240}, {"image_name": "10.jpg", "image_id": 12, "width": 320, "height": 240}, {"image_name": "9.jpg", "image_id": 13, "width": 320, "height": 240}, {"image_name": "2.jpg", "image_id": 14, "width": 320, "height": 240}, {"image_name": "15.jpg", "image_id": 15, "width": 320, "height": 240}, {"image_name": "16.jpg", "image_id": 16, "width": 320, "height": 240}, {"image_name": "8.jpg", "image_id": 17, "width": 320, "height": 240}, {"image_name": "18.jpg", "image_id": 18, "width": 320, "height": 240}, {"image_name": "6.jpg", "image_id": 19, "width": 320, "height": 240}], "annotations": [{"image_id": 0, "annotations_id": 0, "bbox": [71, 67, 68, 86], "person_id": 0}, {"image_id": 1, "annotations_id": 1, "bbox": [111, 57, 62, 80], "person_id": 0}, {"image_id": 2, "annotations_id": 2, "bbox": [102, 52, 79, 94], "person_id": 0}, {"image_id": 3, "annotations_id": 3, "bbox": [73, 67, 68, 86], "person_id": 0}, {"image_id": 4, "annotations_id": 4, "bbox": [84, 41, 69, 100], "person_id": 0}, {"image_id": 5, "annotations_id": 5, "bbox": [76, 65, 70, 88], "person_id": 0}, {"image_id": 6, "annotations_id": 6, "bbox": [86, 61, 68, 92], "person_id": 0}, {"image_id": 7, "annotations_id": 7, "bbox": [84, 46, 82, 110], "person_id": 0}, {"image_id": 8, "annotations_id": 8, "bbox": [80, 41, 74, 101], "person_id": 0}, {"image_id": 9, "annotations_id": 9, "bbox": [93, 51, 68, 93], "person_id": 0}, {"image_id": 10, "annotations_id": 10, "bbox": [95, 46, 76, 96], "person_id": 0}, {"image_id": 11, "annotations_id": 11, "bbox": [107, 44, 66, 100], "person_id": 0}, {"image_id": 12, "annotations_id": 12, "bbox": [102, 49, 83, 97], "person_id": 0}, {"image_id": 13, "annotations_id": 13, "bbox": [103, 48, 79, 97], "person_id": 0}, {"image_id": 14, "annotations_id": 14, "bbox": [69, 65, 68, 88], "person_id": 0}, {"image_id": 15, "annotations_id": 15, "bbox": [82, 41, 73, 102], "person_id": 0}, {"image_id": 16, "annotations_id": 16, "bbox": [100, 53, 67, 88], "person_id": 0}, {"image_id": 17, "annotations_id": 17, "bbox": [99, 47, 77, 98], "person_id": 0}, {"image_id": 18, "annotations_id": 18, "bbox": [109, 48, 61, 82], "person_id": 0}, {"image_id": 19, "annotations_id": 19, "bbox": [92, 56, 68, 93], "person_id": 0}], "persons": [{"person_id": 0, "person_name": "unbekannt"}]}
+{
+  "images": [
+    { "image_name": "1.jpg", "image_id": 0, "width": 320, "height": 240 },
+    { "image_name": "17.jpg", "image_id": 1, "width": 320, "height": 240 },
+    { "image_name": "11.jpg", "image_id": 2, "width": 320, "height": 240 },
+    { "image_name": "3.jpg", "image_id": 3, "width": 320, "height": 240 },
+    { "image_name": "13.jpg", "image_id": 4, "width": 320, "height": 240 },
+    { "image_name": "4.jpg", "image_id": 5, "width": 320, "height": 240 },
+    { "image_name": "5.jpg", "image_id": 6, "width": 320, "height": 240 },
+    { "image_name": "20.jpg", "image_id": 7, "width": 320, "height": 240 },
+    { "image_name": "14.jpg", "image_id": 8, "width": 320, "height": 240 },
+    { "image_name": "7.jpg", "image_id": 9, "width": 320, "height": 240 },
+    { "image_name": "12.jpg", "image_id": 10, "width": 320, "height": 240 },
+    { "image_name": "19.jpg", "image_id": 11, "width": 320, "height": 240 },
+    { "image_name": "10.jpg", "image_id": 12, "width": 320, "height": 240 },
+    { "image_name": "9.jpg", "image_id": 13, "width": 320, "height": 240 },
+    { "image_name": "2.jpg", "image_id": 14, "width": 320, "height": 240 },
+    { "image_name": "15.jpg", "image_id": 15, "width": 320, "height": 240 },
+    { "image_name": "16.jpg", "image_id": 16, "width": 320, "height": 240 },
+    { "image_name": "8.jpg", "image_id": 17, "width": 320, "height": 240 },
+    { "image_name": "18.jpg", "image_id": 18, "width": 320, "height": 240 },
+    { "image_name": "6.jpg", "image_id": 19, "width": 320, "height": 240 }
+  ],
+  "annotations": [
+    {
+      "image_id": 0,
+      "annotations_id": 0,
+      "bbox": [71, 67, 68, 86],
+      "person_id": 0
+    },
+    {
+      "image_id": 1,
+      "annotations_id": 1,
+      "bbox": [111, 57, 62, 80],
+      "person_id": 0
+    },
+    {
+      "image_id": 2,
+      "annotations_id": 2,
+      "bbox": [102, 52, 79, 94],
+      "person_id": 0
+    },
+    {
+      "image_id": 3,
+      "annotations_id": 3,
+      "bbox": [73, 67, 68, 86],
+      "person_id": 0
+    },
+    {
+      "image_id": 4,
+      "annotations_id": 4,
+      "bbox": [84, 41, 69, 100],
+      "person_id": 0
+    },
+    {
+      "image_id": 5,
+      "annotations_id": 5,
+      "bbox": [76, 65, 70, 88],
+      "person_id": 0
+    },
+    {
+      "image_id": 6,
+      "annotations_id": 6,
+      "bbox": [86, 61, 68, 92],
+      "person_id": 0
+    },
+    {
+      "image_id": 7,
+      "annotations_id": 7,
+      "bbox": [84, 46, 82, 110],
+      "person_id": 0
+    },
+    {
+      "image_id": 8,
+      "annotations_id": 8,
+      "bbox": [80, 41, 74, 101],
+      "person_id": 0
+    },
+    {
+      "image_id": 9,
+      "annotations_id": 9,
+      "bbox": [93, 51, 68, 93],
+      "person_id": 0
+    },
+    {
+      "image_id": 10,
+      "annotations_id": 10,
+      "bbox": [95, 46, 76, 96],
+      "person_id": 0
+    },
+    {
+      "image_id": 11,
+      "annotations_id": 11,
+      "bbox": [107, 44, 66, 100],
+      "person_id": 0
+    },
+    {
+      "image_id": 12,
+      "annotations_id": 12,
+      "bbox": [102, 49, 83, 97],
+      "person_id": 0
+    },
+    {
+      "image_id": 13,
+      "annotations_id": 13,
+      "bbox": [103, 48, 79, 97],
+      "person_id": 0
+    },
+    {
+      "image_id": 14,
+      "annotations_id": 14,
+      "bbox": [69, 65, 68, 88],
+      "person_id": 0
+    },
+    {
+      "image_id": 15,
+      "annotations_id": 15,
+      "bbox": [82, 41, 73, 102],
+      "person_id": 0
+    },
+    {
+      "image_id": 16,
+      "annotations_id": 16,
+      "bbox": [100, 53, 67, 88],
+      "person_id": 0
+    },
+    {
+      "image_id": 17,
+      "annotations_id": 17,
+      "bbox": [99, 47, 77, 98],
+      "person_id": 0
+    },
+    {
+      "image_id": 18,
+      "annotations_id": 18,
+      "bbox": [109, 48, 61, 82],
+      "person_id": 0
+    },
+    {
+      "image_id": 19,
+      "annotations_id": 19,
+      "bbox": [92, 56, 68, 93],
+      "person_id": 0
+    }
+  ],
+  "persons": [{ "person_id": 0, "person_name": "unbekannt" }]
+}

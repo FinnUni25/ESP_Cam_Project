@@ -3,8 +3,9 @@ import cv2
 import urllib.request as open_url
 import numpy as np
 import time
-import matplotlib.pyplot as plt
-import matplotlib
+from pathlib import Path
+# import matplotlib.pyplot as plt
+# import matplotlib
 
 url = "http://192.168.178.81/capture"
 image_dir = "/home/finn/Arduino/ESP32_Cam/images"
@@ -12,6 +13,9 @@ time_interval = 0.5
 image_count = 20
 
 counter = 0
+
+for file in Path(image_dir):
+    file.unlink() # löscht alle Dateien im image ordnes
 
 while counter < 20:
     counter = counter + 1
