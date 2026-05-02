@@ -70,14 +70,21 @@ for image_path in Path(images_path).glob("*.jpg"):
         for face in faces: 
             x,y,bw,bh = face[:4]
             cv2.rectangle(image, (int(x), int(y)), (int(x) + int(bw), int(y) + int(bh)), (0, 255, 0), 2)
-            right_eye_x, right_eye_y = int(face[4]), int(face[5])
-            left_eye_x, left_eye_y = int(face[6]), int(face[7])
-            mid_x, mid_y = int((right_eye_x + left_eye_x) / 2), int((right_eye_y + left_eye_y) / 2)
-            x_dist, y_dist = right_eye_x - left_eye_x, right_eye_y - left_eye_y
-            image = rotate_image(image, (mid_x, mid_y), math.degrees(np.arctan((y_dist/x_dist))))
-            print(math.degrees(np.arctan(-(y_dist/x_dist))))
-            # cv2.circle(image, (mid_x, mid_y), 3, (0,0,255), -1)     # -1 füllt den Kreis aus
-            cv2.line(image, (left_eye_x, left_eye_y), (right_eye_x, right_eye_y), (0,0,255), 3)
+
+            ######## Dieser Schritt hier wäre gewesen, um das Bild zu rotieren, dass die Augen auf einer Höhe sind
+            ######## Das mache ich aber nicht, weil YuNet auf Bildern mit schrägen Gesichtern die Punkte der Augen falsch setzt
+            ######## was man noch machen müsste: markante Punkte mit rotationsmatrix rotieren und anhand der Punkte eine neue bbox definieren, das ganze dann mit Winkel für Drehung in json speichern
+            # right_eye_x, right_eye_y = int(face[4]), int(face[5])
+            # left_eye_x, left_eye_y = int(face[6]), int(face[7])
+            # right_mouth_x, right_mouth_y = int(face[10]), int(face[11])
+            # left_mouth_x, left_mouth_y = int(face[12]), int(face[13])
+            # nose_x, nose_y = int(face[8]), int(face[9])
+            # mid_x, mid_y = int((right_eye_x + left_eye_x) / 2), int((right_eye_y + left_eye_y) / 2)
+            # x_dist, y_dist = right_eye_x - left_eye_x, right_eye_y - left_eye_y
+            # cv2.line(image, (left_eye_x, left_eye_y), (right_eye_x, right_eye_y), (0,0,255), 3)
+            # cv2.circle(image, (left_mouth_x, left_mouth_y), 3, (0,0,255), -1)     # -1 füllt den Kreis aus
+            # image = rotate_image(image, (mid_x, mid_y), math.degrees(np.arctan((y_dist/x_dist))))
+
             bboxes["annotations"].append({"image_id": img_id,
                                           "annotations_id": ann_id,
                                           "bbox": [int(x), int(y), int(bw), int(bh)],
@@ -86,9 +93,9 @@ for image_path in Path(images_path).glob("*.jpg"):
             ann_id = ann_id + 1
     img_id = img_id + 1
 
-    cv2.imshow("YuNet Detection", image)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+    # cv2.imshow("YuNet Detection", image)
+    # cv2.waitKey(0)
+    # cv2.destroyAllWindows()
 
 # print(bboxes)
 
